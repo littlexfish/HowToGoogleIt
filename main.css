@@ -41,10 +41,18 @@
 
 .qBox {
     position: absolute;
-    top: calc(45% + 120px);
+    top: calc(45% + 150px);
     left: 50%;
     margin: 0 -50% 0 0;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+}
+
+#copy {
+    position: relative;
+    left: 50%;
+    margin: 25px -50% 0 0;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
 }
 
 .qHide {

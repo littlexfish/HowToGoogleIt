@@ -1,0 +1,133 @@
+
+.googleImage {
+    /*display: table-cell;*/
+    /*vertical-align: middle;*/
+}
+.googleImage img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30vh;
+}
+
+.searchBox {
+    position: absolute;
+    top: calc(45% + 20px);
+    left: 50%;
+    margin: 0 -50% 0 0;
+    transform: translate(-50%, -50%)
+}
+
+.searchBox input {
+    width: 50vw;
+    height: 50px;
+    border: 1px black solid;
+    font-size: 20px;
+}
+
+.button {
+    position: absolute;
+    top: calc(45% + 80px);
+    left: 50%;
+    margin: 0 -50% 0 0;
+    transform: translate(-50%, -50%)
+}
+
+.button button {
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+}
+
+.qBox {
+    position: absolute;
+    top: calc(45% + 150px);
+    left: 50%;
+    margin: 0 -50% 0 0;
+    transform: translate(-50%, -50%);
+}
+
+#copy {
+    position: relative;
+    left: 50%;
+    margin: 25px -50% 0 0;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+
+.qHide {
+    display: none;
+}
+
+.qBox input{
+    width: 50vw;
+    height: 20px;
+    border: 1px black solid;
+    font-size: 14px;
+}
+
+.cursor {
+    position: absolute;
+    top: 100vh;
+    left: 50vw;
+    /*transform: translate(50vw, 100vh);*/
+}
+
+.cursorMoveBox {
+    animation-name: moveCursorBox;
+    animation-delay: 1s;
+    animation-duration: 2s;
+}
+
+.cursorMoveBoxEnd {
+    animation-name: clickCursor;
+    animation-delay: 0s;
+    animation-duration: 0.5s;
+    top: calc(45% + 20px);
+    left: 26vw;
+}
+
+.cursorMoveSearch {
+    animation-name: moveCursorSearch;
+    animation-delay: 1s;
+    animation-duration: 1s;
+}
+
+.cursorMoveSearchEnd {
+    animation-name: clickCursor;
+    animation-delay: 0s;
+    animation-duration: 0.5s;
+    top: calc(45% + 80px);
+    left: 50vw;
+}
+
+@keyframes moveCursorBox {
+    from {
+    }
+
+    to {
+        top: calc(45% + 20px);
+        left: 26vw;
+    }
+}
+
+@keyframes clickCursor {
+    from {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes moveCursorSearch {
+    from {
+    }
+    to {
+        top: calc(45% + 80px);
+        left: 50vw;
+    }
+}

@@ -13,7 +13,7 @@ function onSearch() { // on click search button
 	let url = window.location.href;
 	if(url.includes('?')) url += '&';
 	else url += '?';
-	document.getElementById('qOutput').value = url + 'q=' + search;
+	document.getElementById('qOutput').value = url + 'q=' + search.replaceAll(' ', '+');
 	document.querySelector('.qBox.qHide').classList.remove('qHide');
 }
 function moveToBoxEnd() { // on cursor move to search box
@@ -40,7 +40,7 @@ function moveToSearchEnd() { // on cursor move to search button end
 function onRedirect() { // on cursor click and need to redirect
 	let query = new URLSearchParams(window.location.search);
 	if(query.get('redirect') === 'false') return; // a choice to avoid redirect
-	window.location.href = 'https://www.google.com/search?q=' + str; // redirect to google search
+	window.location.href = 'https://www.google.com/search?q=' + str.replaceAll(' ', '+'); // redirect to google search
 }
 function onTypeAnim() { // on type search query
 	if(frame<20 / str.length) { // use to control type speed

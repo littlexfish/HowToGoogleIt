@@ -1,8 +1,4 @@
 
-.googleImage {
-    /*display: table-cell;*/
-    /*vertical-align: middle;*/
-}
 .googleImage img {
     display: block;
     margin-left: auto;
@@ -70,7 +66,6 @@
     position: absolute;
     top: 100vh;
     left: 50vw;
-    /*transform: translate(50vw, 100vh);*/
 }
 
 .cursorMoveBox {
